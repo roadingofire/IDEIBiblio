@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>@ViewBag.Title</title>
+<link href="~/Content/_Layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+    <table align="center" id="body_structure">
+    	<tr>
+        	<td align="center" width="235"><span class="title">@ViewBag.Logo</span></td>
+            <td>
+            	<table align="right" id="navigation_table">
+                	<tr>
+                    	<td width="70"></td>
+                		<td align="right">
+							@Html.ActionLink("login", "Login", "Auth",new {@style="color:#000;font-family: Tahoma;text-decoration:none;"}) | @Html.ActionLink("registar", "Login", "Auth",new {@style="color:#000;font-family: Tahoma;text-decoration:none;"})                      
+                        </td>
+                	</tr>
+                    <tr>
+                    	<td width="70"></td>
+                		<td>
+                        	<ul class="navigation">
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>                          
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>                            
+                       			<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            </ul>
+                        </td>
+                	</tr>
+                </table>
+            </td>
+        </tr>     	
+    </table>
+    </div>
+    <div id="content">
+		@RenderBody();
+	</div>
+</div>
+
+</body>
+</html>
