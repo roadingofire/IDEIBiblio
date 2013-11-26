@@ -15,6 +15,7 @@ preços praticados por lojas concorrentes e que disponibiliza uma lista de algun
 preços devem ser alterados nesse dia de modo a tornar os produtos da loja mais concorrenciais.
 
 Funcionalidades a implementar na aplicação: 
+
 • Autenticação dos utilizadores na aplicação Web: cliente registado, gestor de produtos e 
 administrador. 
 
