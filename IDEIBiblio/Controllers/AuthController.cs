@@ -13,6 +13,13 @@ namespace IDEIBiblio.Controllers
 
         public ActionResult Index()
         {
+            ViewData["Username"] = "Username";
+            ViewData["Password"] = "Password";
+            return View();
+        }
+
+        public ActionResult Registo()
+        {
             return View();
         }
 

@@ -8,34 +8,19 @@
 <body>
 <div id="wrapper">
 	<div id="header">
-    <table align="center" id="body_structure">
-    	<tr>
-        	<td align="center" width="235"><span class="title">@ViewBag.Logo</span></td>
-            <td>
-            	<table align="right" id="navigation_table">
-                	<tr>
-                    	<td width="70"></td>
-                		<td align="right">
-							@Html.ActionLink("login", "Login", "Auth",new {@style="color:#000;font-family: Tahoma;text-decoration:none;"}) | @Html.ActionLink("registar", "Login", "Auth",new {@style="color:#000;font-family: Tahoma;text-decoration:none;"})                      
-                        </td>
-                	</tr>
-                    <tr>
-                    	<td width="70"></td>
-                		<td>
-                        	<ul class="navigation">
-                                <li>@Html.ActionLink("Home", "Index", "Home")</li>                          
-                                <li>@Html.ActionLink("Home", "Index", "Home")</li>                            
-                       			<li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            </ul>
-                        </td>
-                	</tr>
-                </table>
-            </td>
-        </tr>     	
-    </table>
+        <div id="sub_header">
+            <div id="title_div" style="float:left;"><span class="title">IDEIBIBLIO</span></div>
+            <div id="nav_div">
+                <ul class="navigation">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>                          
+                </ul>
+            </div>            
+            <div id="auth_div">@Html.ActionLink("login", "Index", "Auth") <span>|</span> @Html.ActionLink("registar", "Registo", "Auth")</div>
+            <div style="clear:both; width:auto;"></div>
+        </div>    	
     </div>
     <div id="content">
-		@RenderBody();
+		@RenderBody()
 	</div>
 </div>
 
